@@ -81,7 +81,7 @@ SUBROUTINE mode1(option,lower_k_str,upper_k_str,filename)
 
     !*********************************************************************************************************
     read(lower_k_str,*)lower_k
-    read(upper_k_str,*),upper_k
+    read(upper_k_str,*)upper_k
     !Parameters used to allocate arrays depending on the type of PROCAR
     if (trim(option) .eq. "--lda") then
       nion = nion + 1  ! So I can use the same variable to include the "tot ..." row
